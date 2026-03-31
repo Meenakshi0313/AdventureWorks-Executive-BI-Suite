@@ -41,88 +41,88 @@ The analytical model is designed as a Star Schema, ensuring efficient query perf
 *Click each section below to expand the screenshot.*
 
 <details>
-  <summary> 🏠 Home Page </summary>
+  <summary> **🏠 Home Page** </summary>
   <br>
   <img src="docs/Home-Page.png" width="900" alt="Home-Page">
   
 </details>
 
 <details>
-  <summary> 📊 Executive Overview </summary>
+  <summary> **📊 Executive Overview** </summary>
   <br>
   <img src="docs/Executive-Overview.png" width="900" alt="Executive-Overview">
 </details>
 
-- **Global Revenue**: Analyzed $44.35M in Total Sales with the United States driving over 50% of global market share.
+- Global Revenue: Analyzed $44.35M in Total Sales with the United States driving over 50% of global market share.
 
-- **Profitability**: Tracked $18.32M in Total Profit, monitoring the 41.3% margin stability through seasonal trends.
+- Profitability: Tracked $18.32M in Total Profit, monitoring the 41.3% margin stability through seasonal trends.
 
-- **Top Performance**: Identified "Road Bikes" as the primary revenue subcategory, contributing $21.5M to the bottom line.
+- Top Performance: Identified "Road Bikes" as the primary revenue subcategory, contributing $21.5M to the bottom line.
 
 
 <details>
-  <summary> 📦 Product Analysis </summary>
+  <summary> **📦 Product Analysis** </summary>
   <br>
   <img src="docs/Product-Analysis.png" width="900" alt="Product-Analysis">
 </details>
 
-- **Pareto Principle**: Visualized that the top 30.2% of models generate the majority of revenue, allowing for inventory prioritization.
+- Pareto Principle: Visualized that the top 30.2% of models generate the majority of revenue, allowing for inventory prioritization.
 
-- **Portfolio Health**: Used a scatter plot to identify "underperformers" (High volume, low margin) versus "stars" (High volume, high margin).
+- Portfolio Health: Used a scatter plot to identify "underperformers" (High volume, low margin) versus "stars" (High volume, high margin).
 
-- **Inventory Turnover**: Measured a 4.4 turnover rate, signaling a healthy "Surplus" position for top-selling models.
+- Inventory Turnover: Measured a 4.4 turnover rate, signaling a healthy "Surplus" position for top-selling models.
 
 
 <details>
-  <summary> 🌐 Customer Insights </summary>
+  <summary> **🌐 Customer Insights** </summary>
   <br>
   <img src="docs/Customer-Insights.png" width="900" alt="Customer-Insights">
 </details>
 
-- **Loyalty Metrics**: Achieved a 37.14% Repeat Customer Rate, a key KPI for measuring long-term brand health.
+- Loyalty Metrics: Achieved a 37.14% Repeat Customer Rate, a key KPI for measuring long-term brand health.
 
-- **Segmentation**: Correlated revenue vs. purchase frequency by occupation, identifying "Management" and "Professional" tiers as highest-value segments.
+- Segmentation: Correlated revenue vs. purchase frequency by occupation, identifying "Management" and "Professional" tiers as highest-value segments.
 
-- **Demographics**: Binned yearly income to identify the $50K–$100K bracket as the core purchasing demographic.
+- Demographics: Binned yearly income to identify the $50K–$100K bracket as the core purchasing demographic.
 
 
 <details>
-  <summary> 🚚 Supply Chain Operations </summary>
+  <summary> **🚚 Supply Chain Operations** </summary>
   <br>
   <img src="docs/Supply-Chain.png" width="900" alt="Supply-Chain">
 </details>
 
-- **Inventory Risk**: Identified a -4K net stock position, flagging a critical "Inventory Deficit" that threatens potential revenue.
+- Inventory Risk: Identified a -4K net stock position, flagging a critical "Inventory Deficit" that threatens potential revenue.
 
-- **Flow Analysis**: Tracked monthly "Inbound vs. Outbound" volume to optimize warehouse labor and storage allocation.
+- Flow Analysis: Tracked monthly "Inbound vs. Outbound" volume to optimize warehouse labor and storage allocation.
 
-- **Impact Mapping**: Visualized the specific products in deficit (e.g., Mountain-200 frames) to prioritize replenishment.
+- Impact Mapping: Visualized the specific products in deficit (e.g., Mountain-200 frames) to prioritize replenishment.
 
 
 <details>
-  <summary> ⭐ Employee Performance </summary>
+  <summary> **⭐ Employee Performance** </summary>
   <br>
   <img src="docs/Employee-Performance.png" width="900" alt="Employee-Performance">
 </details>
 
-- **Quota Tracking**: Monitored the global sales force against a $51.4M target, identifying a current 46.34% attainment level.
+- Quota Tracking: Monitored the global sales force against a $51.4M target, identifying a current 46.34% attainment level.
 
-- **Force Distribution**: Categorized employees into performance tiers, revealing that while 4 are "Elite," 8 are currently "At Risk."
+- Force Distribution: Categorized employees into performance tiers, revealing that while 4 are "Elite," 8 are currently "At Risk."
 
-- **Departmental Efficiency**: Analyzed salary budget allocation, showing "Production" as the primary resource driver at 46.24%.
+- Departmental Efficiency: Analyzed salary budget allocation, showing "Production" as the primary resource driver at 46.24%.
 
 
 <details>
-  <summary> 📣 Promo Analysis </summary>
+  <summary> **📣 Promo Analysis** </summary>
   <br>
   <img src="docs/Promo-Analysis.png" width="900" alt="Promo-Analysis">
 </details>
 
-- **Discount Efficiency**: Proved that "Volume Discounts" maintain a high ROI, driving $3.06M in sales with only a 0.17% discount impact.
+- Discount Efficiency: Proved that "Volume Discounts" maintain a high ROI, driving $3.06M in sales with only a 0.17% discount impact.
 
-- **Promotion Mix**: Identified that Volume Discounts account for over 97% of promotional revenue.
+- Promotion Mix: Identified that Volume Discounts account for over 97% of promotional revenue.
 
-- **Seasonality**: Tracked "New Product" vs. "Volume Discount" effectiveness across the fiscal calendar to optimize marketing spend.
+- Seasonality: Tracked "New Product" vs. "Volume Discount" effectiveness across the fiscal calendar to optimize marketing spend.
 
 ---
 
