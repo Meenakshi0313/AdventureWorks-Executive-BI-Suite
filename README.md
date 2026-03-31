@@ -22,37 +22,43 @@ This project transforms raw transactional data into a multi-page, interactive Po
 *Click each section below to expand the screenshot.*
 
 <details>
-  <summary>📊 Executive Overview </summary>
+  <summary> 🏠 Home Page </summary>
   <br>
-  <img src="docs/ExecutiveOverview.png" width="900" alt="ExecutiveOverview">
+  <img src="docs/Home-Page.png" width="900" alt="Home-Page">
 </details>
 
 <details>
-  <summary>📊 Product Analysis </summary>
+  <summary> 📊 Executive Overview </summary>
   <br>
-  <img src="docs/ProductAnalysis.png" width="900" alt="ProductAnalysis">
+  <img src="docs/Executive-Overview.png" width="900" alt="Executive-Overview">
 </details>
 
 <details>
-  <summary>📊 Customer Insights </summary>
+  <summary> 📦 Product Analysis </summary>
   <br>
-  <img src="docs/CustomerInsights.png" width="900" alt="CustomerInsights">
+  <img src="docs/Product-Analysis.png" width="900" alt="Product-Analysis">
 </details>
 
 <details>
-  <summary>📊 Supply Chain </summary>
+  <summary> 🌐 Customer Insights </summary>
   <br>
-  <img src="docs/SupplyChain.png" width="900" alt="SupplyChain">
+  <img src="docs/Customer-Insights.png" width="900" alt="Customer-Insights">
 </details>
 
 <details>
-  <summary>📊 Employee Performance </summary>
+  <summary> 🚚 Supply Chain </summary>
   <br>
-  <img src="docs/EmployeePerformance.png" width="900" alt="EmployeePerformance">
+  <img src="docs/Supply-Chain.png" width="900" alt="Supply-Chain">
 </details>
 
 <details>
-  <summary>📊 Promo Analysis </summary>
+  <summary> ⭐ Employee Performance </summary>
   <br>
-  <img src="docs/PromoAnalysis.png" width="900" alt="PromoAnalysis">
+  <img src="docs/Employee-Performance.png" width="900" alt="Employee-Performance">
+</details>
+
+<details>
+  <summary> 📣 Promo Analysis </summary>
+  <br>
+  <img src="docs/Promo-Analysis.png" width="900" alt="Promo-Analysis">
 </details>
