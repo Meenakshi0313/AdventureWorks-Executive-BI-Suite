@@ -1,14 +1,14 @@
-### AdventureWorks Executive BI Suite
+## AdventureWorks Executive BI Suite
 
-## 📊 End-to-End Business Intelligence Solution
+### 📊 End-to-End Business Intelligence Solution
 
-## 📌 Project Overview
+### 📌 Project Overview
 
 This project transforms raw transactional data into a multi-page, interactive Power BI executive suite. It is designed to provide stakeholders with actionable insights across sales, product lifecycle, supply chain efficiency, and employee productivity.
 
 ---
 
-## 🛠️ Technical Architecture
+### 🛠️ Technical Architecture
 
 - **Data Modeling**: Transformed a complex snowflake schema into a high-performance Star Schema for optimized DAX calculations.
 
@@ -34,7 +34,7 @@ The analytical model is designed as a Star Schema, ensuring efficient query perf
 
 ---
 
-## 📊 Dashboard Previews & Business Insights
+### 📊 Dashboard Previews & Business Insights
 
 **User Experience**: Implemented a centralized "app-like" landing page to provide intuitive access to all 6 specialized report domains.
 
@@ -133,6 +133,8 @@ The analytical model is designed as a Star Schema, ensuring efficient query perf
 - **Power BI**: DAX, Star Schema Modeling, Interactive UI.
 
 - **GitHub**: Version control and documentation.
+
+  ---
 
   *[Download the Power BI report file here](https://github.com/Meenakshi0313/AdventureWorks-Executive-BI-Suite/blob/main/Power%20BI/AdventureWorks_Executive_Suite.pbix).*
 
