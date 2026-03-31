@@ -134,7 +134,7 @@ The analytical model is designed as a Star Schema, ensuring efficient query perf
 
 - **GitHub**: Version control and documentation.
 
-  *[Download the Power BI report file here]((https://github.com/Meenakshi0313/AdventureWorks-Executive-BI-Suite/blob/main/Power%20BI/AdventureWorks_Executive_Suite.pbix)).*
+  *[Download the Power BI report file here](https://github.com/Meenakshi0313/AdventureWorks-Executive-BI-Suite/blob/main/Power%20BI/AdventureWorks_Executive_Suite.pbix).*
 
   ---
 
