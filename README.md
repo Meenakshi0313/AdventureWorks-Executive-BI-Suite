@@ -41,14 +41,14 @@ The analytical model is designed as a Star Schema, ensuring efficient query perf
 *Click each section below to expand the screenshot.*
 
 <details>
-  <summary> **🏠 Home Page** </summary>
+  <summary> 🏠 Home Page </summary>
   <br>
   <img src="docs/Home-Page.png" width="900" alt="Home-Page">
   
 </details>
 
 <details>
-  <summary> **📊 Executive Overview** </summary>
+  <summary> 📊 Executive Overview </summary>
   <br>
   <img src="docs/Executive-Overview.png" width="900" alt="Executive-Overview">
 </details>
@@ -61,7 +61,7 @@ The analytical model is designed as a Star Schema, ensuring efficient query perf
 
 
 <details>
-  <summary> **📦 Product Analysis** </summary>
+  <summary> 📦 Product Analysis </summary>
   <br>
   <img src="docs/Product-Analysis.png" width="900" alt="Product-Analysis">
 </details>
@@ -74,7 +74,7 @@ The analytical model is designed as a Star Schema, ensuring efficient query perf
 
 
 <details>
-  <summary> **🌐 Customer Insights** </summary>
+  <summary> 🌐 Customer Insights </summary>
   <br>
   <img src="docs/Customer-Insights.png" width="900" alt="Customer-Insights">
 </details>
@@ -87,7 +87,7 @@ The analytical model is designed as a Star Schema, ensuring efficient query perf
 
 
 <details>
-  <summary> **🚚 Supply Chain Operations** </summary>
+  <summary> 🚚 Supply Chain Operations </summary>
   <br>
   <img src="docs/Supply-Chain.png" width="900" alt="Supply-Chain">
 </details>
@@ -100,7 +100,7 @@ The analytical model is designed as a Star Schema, ensuring efficient query perf
 
 
 <details>
-  <summary> **⭐ Employee Performance** </summary>
+  <summary> ⭐ Employee Performance </summary>
   <br>
   <img src="docs/Employee-Performance.png" width="900" alt="Employee-Performance">
 </details>
@@ -113,7 +113,7 @@ The analytical model is designed as a Star Schema, ensuring efficient query perf
 
 
 <details>
-  <summary> **📣 Promo Analysis** </summary>
+  <summary> 📣 Promo Analysis </summary>
   <br>
   <img src="docs/Promo-Analysis.png" width="900" alt="Promo-Analysis">
 </details>
