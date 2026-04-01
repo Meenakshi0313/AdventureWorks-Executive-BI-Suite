@@ -47,7 +47,7 @@ The analytical model is designed as a Star Schema, ensuring efficient query perf
 
 ### 📊 Dashboard Previews & Business Insights
 
-*Click each section below to expand the screenshot.*
+💡 Tip: Click on any heading below to view the interactive dashboard screenshots and deep-dive insights.
 
 <details>
   <summary> 🏠 Home Page </summary>
@@ -121,6 +121,10 @@ The analytical model is designed as a Star Schema, ensuring efficient query perf
   <img src="docs/Employee-Performance.png" width="900" alt="Employee-Performance">
 </details>
 
+- Logic Implementation: Developed a custom **DAX Calculated Column** to segment the sales force into Elite (>$X revenue) and At Risk (<$Y revenue) categories.
+
+- Purpose: This allows for static row-level filtering and ensures these tiers can be used as **Slicers** or **Legend** categories across the entire report.
+  
 - Quota Tracking: Monitored the global sales force against a **$51.4M target**, identifying a current **46.34% attainment level**.
 
 - Force Distribution: Categorized employees into **performance tiers**, revealing that while **4 are "Elite**," **8** are currently **"At Risk"**.
