@@ -56,7 +56,7 @@ The analytical model is designed as a Star Schema, ensuring efficient query perf
   </details>
 
   - A centralized **"Command Center"** featuring high-fidelity page navigators and synchronized bookmarks to provide an intuitive, app-like user experience across all 6 analytical domains
-  - 
+    
   ---
 
 <details>
