@@ -48,14 +48,13 @@ The analytical model is designed as a Star Schema, ensuring efficient query perf
 
 ### 📊 Dashboard Previews & Business Insights
 
-**User Experience**: Implemented a centralized "app-like" landing page to provide intuitive access to all 6 specialized report domains.
-
 *Click each section below to expand the screenshot.*
 
 <details>
   <summary> 🏠 Home Page </summary>
   <br>
   <img src="docs/Home-Page.png" width="900" alt="Home-Page">
+  </details>
 
   - A centralized "Command Center" featuring high-fidelity page navigators and synchronized bookmarks to provide an intuitive, app-like user experience across all 6 analytical domains
   
