@@ -18,6 +18,18 @@ This project transforms raw transactional data into a multi-page, interactive Po
 
 ---
 
+### 💾 SQL Engineering (Gold Layer)
+
+To ensure data integrity and performance, I developed a suite of T-SQL Views to serve as the "Gold Layer" for the Power BI model. 
+
+* **ETL Logic:** Implemented `LEFT JOIN` logic to denormalize product and geography hierarchies.
+* **Calculated Columns:** Engineered business logic directly in SQL (e.g., tenure calculations and profit margin formulas) to reduce DAX overhead.
+* **Data Pruning:** Filtered datasets to include only active employees and relevant fiscal years (2010+).
+
+[View the full SQL Script here](sql-scripts/gold_view.sql)
+
+---
+
 ### ⭐ Data Model (Gold Layer)
 
 The analytical model is designed as a Star Schema, ensuring efficient query performance and clear relationship management:
@@ -44,6 +56,8 @@ The analytical model is designed as a Star Schema, ensuring efficient query perf
   <summary> 🏠 Home Page </summary>
   <br>
   <img src="docs/Home-Page.png" width="900" alt="Home-Page">
+
+  - A centralized "Command Center" featuring high-fidelity page navigators and synchronized bookmarks to provide an intuitive, app-like user experience across all 6 analytical domains
   
 </details>
 
