@@ -145,15 +145,15 @@ The analytical model is designed as a Star Schema, ensuring efficient query perf
 
 ### 🛠️ Technologies Used
 
-- **SQL Server & T-SQL**: ETL pipelines and Gold layer view creation.
+**SQL Server**: Mention specific concepts like **CTEs, Joins, and View Creation** (which you already have in the SQL section, but it's good to summarize here).
 
-- **Power BI**: DAX, Star Schema Modeling, Interactive UI.
+**Power BI**: Mention **DAX, Power Query (M)**, and **Star Schema Modeling**.
 
 - **GitHub**: Version control and documentation.
 
   ---
-
-  *[Download the Power BI report file here](https://github.com/Meenakshi0313/AdventureWorks-Executive-BI-Suite/blob/main/Power%20BI/AdventureWorks_Executive_Suite.pbix).*
+  
+[📄 View Full Project Documentation (PDF)](./docs/AdventureWorks_Executive_Suite.pbix.pdf)
 
   ---
 
