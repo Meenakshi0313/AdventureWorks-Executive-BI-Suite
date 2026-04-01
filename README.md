@@ -26,7 +26,7 @@ To ensure data integrity and performance, I developed a suite of T-SQL Views to 
 * **Calculated Columns:** Engineered business logic directly in SQL (e.g., tenure calculations and profit margin formulas) to reduce DAX overhead.
 * **Data Pruning:** Filtered datasets to include only active employees and relevant fiscal years (2010+).
 
-[View the full SQL Script here](sql-scripts/gold_view.sql)
+[View the full SQL Script here](sql-scripts/gold_view)
 
 ---
 
