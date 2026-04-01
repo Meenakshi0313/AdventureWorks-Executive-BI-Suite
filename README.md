@@ -49,6 +49,8 @@ The analytical model is designed as a Star Schema, ensuring efficient query perf
 
 💡 Tip: Click on any heading below to view the interactive dashboard screenshots and deep-dive insights.
 
+---
+
 <details>
   <summary> 🏠 Home Page </summary>
   <br>
@@ -149,9 +151,9 @@ The analytical model is designed as a Star Schema, ensuring efficient query perf
 
 ### 🛠️ Technologies Used
 
-**SQL Server**: Mention specific concepts like **CTEs, Joins, and View Creation** (which you already have in the SQL section, but it's good to summarize here).
+- **SQL Server**: Mention specific concepts like **CTEs, Joins, and View Creation** (which you already have in the SQL section, but it's good to summarize here).
 
-**Power BI**: Mention **DAX, Power Query (M)**, and **Star Schema Modeling**.
+- **Power BI**: Mention **DAX, Power Query (M)**, and **Star Schema Modeling**.
 
 - **GitHub**: Version control and documentation.
 
@@ -161,6 +163,6 @@ The analytical model is designed as a Star Schema, ensuring efficient query perf
 
   ---
 
-  ### Author: 
+  ### Author: Meenakshi Singh 
 
-Meenakshi Singh | Data Analyst | SQL | Data Modeling | Business Intelligence
+Data Analyst | SQL Engineering | Power BI Architecture
