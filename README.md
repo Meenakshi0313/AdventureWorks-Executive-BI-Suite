@@ -97,7 +97,7 @@ The analytical model is designed as a Star Schema, ensuring efficient query perf
 
 - Loyalty Metrics: Achieved a **37.14% Repeat Customer Rate**, a key KPI for measuring long-term brand health.
 
-- Segmentation: Correlated revenue vs. purchase frequency by occupation, identifying **"Management"** and **"Professional"** tiers as highest-value segments.
+- Customer Segmentation: Engineered a custom **DAX Slicer Table** to categorize clients into "High Value" and "Standard" tiers based on a **$5,000+** spend threshold, enabling targeted loyalty analysis.
 
 - Demographics: Binned yearly income to identify the **$50K–$100K** bracket as the core purchasing demographic.
 
