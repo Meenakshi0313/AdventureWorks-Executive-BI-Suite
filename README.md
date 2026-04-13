@@ -6,6 +6,17 @@ This project transforms raw, fragmented transactional data into a **7-page, high
 
 ---
 
+
+### 🔗 Quick Access
+
+* 📊 [**View Executive Performance Report (PDF)**](Report_and_Dashboard/AdventureWorks_Executive_Suite.pdf)
+  
+* 🛠️ [**Download Power BI Dashboard (.pbix)**](Report_and_Dashboard/AdventureWorks_Executive_Suite.pbix)
+  
+* 💾 [**View SQL Gold-Layer Transformation Scripts**](Sql-Scripts/AdventureWork_Gold_Layer_View)
+
+ ---
+ 
 ## 🛠️ Technical Architecture
 
 * **Data Modeling:** Engineered a high-performance **Star Schema** from a complex snowflake source, optimizing filter propagation for sub-second DAX visual rendering.
@@ -19,20 +30,20 @@ This project transforms raw, fragmented transactional data into a **7-page, high
 To ensure a "Single Source of Truth," I developed a suite of **T-SQL Views** to serve as the semantic layer for the Power BI model.
 * **Hierarchy Denormalization:** Flattened product and geography hierarchies using `LEFT JOIN` logic.
 * **Business Logic Layer:** Offloaded heavy calculations (e.g., tenure and profit margins) to SQL to minimize DAX overhead.
-* **Data Pruning:** Filtered legacy datasets to focus on active employees and relevant fiscal cycles (2010+).
-
-[**🔗 View SQL Scripts Repository**](Sql-Scripts/AdventureWork_Gold_Layer_View)
+* **Data Pruning:** Filtered legacy datasets to focus on active employees and relevant fiscal cycles (2010+)
 
 ---
 
-## 📊 Suite Insights (Click to expand screenshots)
+## 📊 Suite Insights
+
+(Click to expand screenshots)
 
 <details>
 <summary>🏠 <b>Home Page: Navigation Hub</b></summary>
 <br>
 A centralized entry point featuring high-fidelity page navigators. 
 <br><br>
-![Home Page](Assets/home_page.png)
+  <img src="Assets/Home_Page.png" width="900" alt="Home_Page">
 </details>
 
 <details>
@@ -41,7 +52,7 @@ A centralized entry point featuring high-fidelity page navigators.
 * Analyzed <b>$44.35M in Total Sales</b> with 41.3% margin stability.
 * Visualized global revenue distribution and flagship product performance.
 <br><br>
-![Executive Overview](Assets/Executive_Overview.png)
+  <img src="Assets/Executive_Overview.png" width="900" alt="Executive_Overview">
 </details>
 
 <details>
@@ -50,7 +61,7 @@ A centralized entry point featuring high-fidelity page navigators.
 * Identified that the <b>top 30.2% of models</b> drive the majority of revenue.
 * Used Scatter Plots to segment "Star" products from "Underperformers."
 <br><br>
-![Product Analysis](Assets/Product_Analysis.png)
+  <img src="Assets/Product_Analysis.png" width="900" alt="Product_Analysis">
 </details>
 
 <details>
@@ -59,7 +70,7 @@ A centralized entry point featuring high-fidelity page navigators.
 * Achieved a <b>37.14% Repeat Customer Rate</b>.
 * Engineered DAX Slicers for <b>"High Value" (>$5k)</b> vs. Standard tiers.
 <br><br>
-![Customer Insights](Assets/Customer_Insights.png)
+  <img src="Assets/Customer_Insights.png" width="900" alt="Customer Insights">
 </details>
 
 <details>
@@ -68,7 +79,7 @@ A centralized entry point featuring high-fidelity page navigators.
 * Identified <b>-4K net stock position</b> in high-demand lines.
 * Mapped inventory deficits directly to revenue-at-risk for replenishment priority.
 <br><br>
-![Supply Chain](Assets/Supply_Chain.png)
+  <img src="Assets/Supply_Chain.png" width="900" alt="Supply Chain">
 </details>
 
 <details>
@@ -77,7 +88,7 @@ A centralized entry point featuring high-fidelity page navigators.
 * Monitored real-time progress against a <b>$51.4M global target</b>.
 * Developed "Elite" vs "At Risk" performance tiering logic.
 <br><br>
-![Employee Performance](Assets/Employee_Performance.png)
+  <img src="Assets/Employee_Performance.png" width="900" alt="Employee Performance">
 </details>
 
 <details>
@@ -86,7 +97,7 @@ A centralized entry point featuring high-fidelity page navigators.
 * Proved <b>Volume Discounts</b> drive $3.06M in sales with minimal margin impact.
 * Analyzed promo effectiveness across the fiscal calendar.
 <br><br>
-![Promo Analysis](Assets/Promo_Analysis.png)
+  <img src="Assets/Promo_Analysis.png" width="900" alt="Promo Analysis">
 </details>
 
 ---
@@ -96,13 +107,6 @@ A centralized entry point featuring high-fidelity page navigators.
 * **SQL Server:** T-SQL, Views, Schema Design.
 * **Power BI:** Star Schema Modeling, Advanced DAX, Sparklines, UX/UI Design.
 * **GitHub:** Version Control and Documentation.
-
----
-
-## 📄 Documentation
-
-* [**View Full Project PDF**](Report_and_Dashboard/AdventureWorks_Executive_Suite.pdf)
-* [**Download .PBIX File**](Report_and_Dashboard/AdventureWorks_Executive_Suite.pbix)
 
 ---
 
