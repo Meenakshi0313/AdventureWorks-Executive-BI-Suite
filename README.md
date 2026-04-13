@@ -34,71 +34,69 @@ To ensure a "Single Source of Truth," I developed a suite of **T-SQL Views** to 
 
 ---
 
-## 📊 Suite Insights
-
-(Click to expand screenshots)
+## 📊 Suite Insights (Click to expand)
 
 <details>
 <summary>🏠 <b>Home Page: Navigation Hub</b></summary>
 <br>
-A centralized entry point featuring high-fidelity page navigators. 
+![Home Page](Assets/Home-Page.png)
 <br><br>
-  <img src="Assets/Home-Page.png" width="900" alt="Home_Page">
+A centralized entry point featuring high-fidelity page navigators. This interface ensures an intuitive, app-like experience for stakeholders across all analytical domains.
 </details>
 
 <details>
 <summary>📊 <b>Executive Overview: Financial Health</b></summary>
 <br>
-* Analyzed $44.35M in Total Sales with 41.3% margin stability.
-* Visualized global revenue distribution and flagship product performance.
+![Executive Overview](Assets/Executive-Overview.png)
 <br><br>
-  <img src="Assets/Executive-Overview.png" width="900" alt="Executive_Overview">
+* Analyzed **$44.35M in Total Sales** with 41.3% margin stability.
+* Visualized global revenue distribution and identified "Road Bikes" as the $21.5M primary revenue driver.
 </details>
 
 <details>
 <summary>📦 <b>Product Analysis: Pareto & Portfolio</b></summary>
 <br>
-* Identified that the **top 30.2% of models** drive the majority of revenue.  
-* Used Scatter Plots to segment "Star" products from "Underperformers."
+![Product Analysis](Assets/Product-Analysis.png)
 <br><br>
-  <img src="Assets/Product-Analysis.png" width="900" alt="Product_Analysis">
+* Identified that the **top 30.2% of models** drive the majority of revenue.
+* Used Portfolio Analysis to segment "Star" products from low-margin "Underperformers."
 </details>
 
 <details>
 <summary>🌐 <b>Customer Insights: Behavioral Segmentation</b></summary>
 <br>
-* Achieved a <b>37.14% Repeat Customer Rate</b>.
-  
-* Engineered DAX Slicers for <b>"High Value" (>$5k)</b> vs. Standard tiers.
+![Customer Insights](Assets/Customer-Insights.png)
 <br><br>
-  <img src="Assets/Customer-Insights.png" width="900" alt="Customer Insights">
+* Achieved a **37.14% Repeat Customer Rate** to measure brand loyalty.
+* Engineered DAX Slicers to segment **"High Value" (>$5k)** demographics for targeted analysis.
 </details>
 
 <details>
-<summary>🚚 <b>Supply Chain: Risk & Deficit Mapping</b></summary>
+<summary>🚚 <b>Supply Chain: Risk & Inventory Velocity</b></summary>
 <br>
-* Identified <b>-4K net stock position</b> in high-demand lines.
-* Mapped inventory deficits directly to revenue-at-risk for replenishment priority.
+![Supply Chain](Assets/Supply-Chain.png)
 <br><br>
-  <img src="Assets/Supply-Chain.png" width="900" alt="Supply Chain">
+* Identified **-4K net stock position** in high-demand lines to prevent revenue loss.
+* Tracked **Inventory Turnover (4.4 rate)** to optimize warehouse allocation and replenishment cycles.
 </details>
 
 <details>
-<summary>⭐ <b>Employee Performance: Quota Tracking</b></summary>
+<summary>⭐ <b>Employee Performance: Compensation & Efficiency</b></summary>
 <br>
-* Monitored real-time progress against a <b>$51.4M global target</b>.
-* Developed "Elite" vs "At Risk" performance tiering logic.
+![Employee Performance](Assets/Employee-Performance.png)
 <br><br>
-  <img src="Assets/Employee-Performance.png" width="900" alt="Employee Performance">
+* **Workforce Structure:** Analyzed employee distribution across salary bands to monitor organizational overhead.
+* **Performance vs. Opportunity:** Used scatter plots to identify high-efficiency sales representatives relative to their territory potential.
+* **Quota Tracking:** Monitored **QTD Quota Attainment** with integrated sparkline trend analysis.
 </details>
 
 <details>
-<summary>📣 <b>Promo Analysis: ROI & Discount Impact</b></summary>
+<summary>📣 <b>Promo Analysis: ROI & Strategy</b></summary>
 <br>
-* Proved <b>Volume Discounts</b> drive $3.06M in sales with minimal margin impact.
-* Analyzed promo effectiveness across the fiscal calendar.
+![Promo Analysis](Assets/Promo-Analysis.png)
 <br><br>
-  <img src="Assets/Promo-Analysis.png" width="900" alt="Promo Analysis">
+* Proved **Volume Discounts** drive $3.06M in sales with a lean 5.23% discount rate impact.
+* **Promo ROI:** Correlated discount costs against revenue impact to identify the most effective marketing campaigns.
 </details>
 
 ---
