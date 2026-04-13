@@ -182,6 +182,7 @@ Please use the links below to review the project files:
 * 📊 **[Download Power BI Dashboard (.pbix)](Report_and_Dashboard/AdventureWorks_Executive_Suite.pbix)** - *Requires Power BI Desktop to view data model and DAX*
 * 📄 **[Download Project Summary (PDF)](Report_and_Dashboard/AdventureWorks_Executive_Suite.pdf)** - *A comprehensive report of insights and methodology*
 * 💻 **[View SQL Scripts](Sql-Scripts/AdventureWork_Gold_Layer_View.sql)** - *Database views and transformation logic*
+* 🗄️ **[Source Data (.bak)](AdventureWorks2025_Source/AdventureWorksDW2025.bak)** - *(24.1 MB)*
 
 ---
 
