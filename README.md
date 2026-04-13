@@ -60,7 +60,11 @@ The Power BI model follows a **Star Schema** design for optimal performance:
   <img src="Assets/Home-Page.png" width="100%" alt="Home Page">
 </p>
 <br>
-The entry point of the suite, designed for high-level accessibility. It acts as a central router for stakeholders to navigate across all specialized reporting pages.
+The entry point of the suite, designed for high-level accessibility.
+
+- **Purpose:** Acts as a central router for stakeholders (Executives, Supply Chain Managers, HR).
+
+- **Design:** Features a clean, button-based UI for seamless navigation across all 6 specialized reporting pages.
 </details>
 
 <details>
@@ -70,7 +74,13 @@ The entry point of the suite, designed for high-level accessibility. It acts as 
   <img src="Assets/Executive-Overview.png" width="100%" alt="Executive Overview">
 </p>
 <br>
-The "Big Picture" view for C-suite stakeholders. Key features include Pareto Analysis (80/20 Rule) for product revenue and global sales distribution tracking.
+The "Big Picture" view for C-suite stakeholders to monitor organizational health.
+
+**Core Metrics:** Tracks Total Revenue ($2.03M), Profit Margin (42.19%), and Order Volume.
+
+**Global Reach:** A Donut Chart breaks down market share, showing the United States (50%) and Australia (18%) as lead territories.
+
+**Revenue Concentration:** Features a Pareto Analysis (80/20 Rule) showing that Mountain and Touring bikes drive the vast majority of income.
 </details>
 
 <details>
@@ -79,8 +89,13 @@ The "Big Picture" view for C-suite stakeholders. Key features include Pareto Ana
 <p align="center">
   <img src="Assets/Product-Analysis.png" width="100%" alt="Product Analysis">
 </p>
-<br>
-Focuses on inventory performance. Includes a Price Positioning vs. Profitability scatter plot and monitors volume growth against return rate trends.
+<br>A granular look at inventory performance and product-level profitability.
+
+- **Metrics:** Analyzes Average Selling Price ($427.44) and a critical Return Rate (80.38%).
+
+- **Strategic Plotting:** Uses a Price Positioning vs. Profitability scatter plot to identify "Star" products versus underperformers.
+
+- **Volume Trends:** A combination bar/line chart tracks volume growth against return rates to monitor quality control.
 </details>
 
 <details>
@@ -90,7 +105,13 @@ Focuses on inventory performance. Includes a Price Positioning vs. Profitability
   <img src="Assets/Customer-Insights.png" width="100%" alt="Customer Insights">
 </p>
 <br>
-Detailed segmentation analyzing occupation-based spending, geographic density, and a tracking leaderboard for elite customers based on Revenue and CAC.
+Demographic and behavioral segmentation to refine marketing efforts.
+
+- **Value Matrix:** A scatter plot analyzing Frequency vs. Spending across occupations, identifying "Professional" and "Management" roles as the highest-value segments.
+
+- **Geographic Distribution:** A Treemap visualizing customer density by country.
+
+- **Elite Customer Tracking:** A filtered list of top-tier customers by revenue, contrasted against their CAC (Customer Acquisition Cost).
 </details>
 
 <details>
@@ -100,7 +121,13 @@ Detailed segmentation analyzing occupation-based spending, geographic density, a
   <img src="Assets/Supply-Chain.png" width="100%" alt="Supply Chain">
 </p>
 <br>
-Monitors stock efficiency with an Inventory Turnover KPI and identifies revenue-impacting stock deficits in the "Accessories" category.
+Operational analysis focused on stock efficiency and revenue protection.
+
+- **Flow Monitoring:** A dual-axis "Inbound vs. Outbound" trend line to spot seasonal bottlenecks.
+
+- **Inventory Health:** Tracks Inventory Turnover (11.5x) and "Net Stock Position."
+
+- **Revenue Impact:** A specialized scatter plot highlighting how "Inventory Deficits" in categories like Accessories lead to missed revenue opportunities.
 </details>
 
 <details>
@@ -110,7 +137,13 @@ Monitors stock efficiency with an Inventory Turnover KPI and identifies revenue-
   <img src="Assets/Employee-Performance.png" width="100%" alt="Employee Performance">
 </p>
 <br>
-HR-focused view tracking Quota Attainment and Profit per Employee. Features a workforce compensation structure analysis by salary band.
+HR and Sales leadership view to monitor workforce efficiency and quota attainment.
+
+- **Efficiency Metrics:** Tracks Quota Attainment % (8.01%) and Profit per Employee ($3.38K).
+
+- **Compensation Structure:** A bar chart segmenting the workforce by Salary Band (Entry to Executive).
+
+- **Sales Leaderboard:** A "Revenue vs. Profit" bar chart identifying top-performing agents like Linda Mitchell and Shu Ito.
 </details>
 
 <details>
@@ -120,7 +153,11 @@ HR-focused view tracking Quota Attainment and Profit per Employee. Features a wo
   <img src="Assets/Promo-Analysis.png" width="100%" alt="Promo Analysis">
 </p>
 <br>
-Evaluates marketing ROI by comparing discount costs against revenue impact, identifying which promotional types drive the highest volume growth.
+- **Discount Impact:** Compares Total Promo Sales ($662K) against the Total Discount cost ($34K).
+
+- **ROI Matrix:** A scatter plot identifying which promotions (e.g., "Volume Discounts") have the highest return on investment.
+
+- **Seasonality:** A line-and-cluster chart analyzing how discount rates correlate with sales volume fluctuations throughout the year.
 </details>
 
 ---
@@ -146,7 +183,7 @@ Please use the links below to review the project files:
 
 ---
 
-# Author: Meenakshi Singh
+## Author: Meenakshi Singh
 
 Data Analyst | SQL Engineering | Power BI Architecture
 
