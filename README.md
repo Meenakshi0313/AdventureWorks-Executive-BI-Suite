@@ -25,41 +25,69 @@ To ensure a "Single Source of Truth," I developed a suite of **T-SQL Views** to 
 
 ---
 
-## 📊 Suite Insights & Business Logic
+## 📊 Suite Insights (Click to expand screenshots)
 
-### 🏠 Home Page (Command Center)
+<details>
+<summary>🏠 <b>Home Page: Navigation Hub</b></summary>
+<br>
+A centralized entry point featuring high-fidelity page navigators. 
+<br><br>
+![Home Page](Assets/home_page.png)
+</details>
 
-A centralized entry point featuring high-fidelity page navigators. This "App-style" interface ensures an intuitive user experience across all six analytical domains.
+<details>
+<summary>📊 <b>Executive Overview: Financial Health</b></summary>
+<br>
+* Analyzed <b>$44.35M in Total Sales</b> with 41.3% margin stability.
+* Visualized global revenue distribution and flagship product performance.
+<br><br>
+![Executive Overview](Assets/Executive_Overview.png)
+</details>
 
-### 📊 Executive Overview
+<details>
+<summary>📦 <b>Product Analysis: Pareto & Portfolio</b></summary>
+<br>
+* Identified that the <b>top 30.2% of models</b> drive the majority of revenue.
+* Used Scatter Plots to segment "Star" products from "Underperformers."
+<br><br>
+![Product Analysis](Assets/Product_Analysis.png)
+</details>
 
-* **Market Share:** Analyzed **$44.35M in Total Sales**, with the US driving >50% of global revenue.
-* **Stability:** Monitored a consistent **41.3% profit margin** across seasonal trends.
+<details>
+<summary>🌐 <b>Customer Insights: Behavioral Segmentation</b></summary>
+<br>
+* Achieved a <b>37.14% Repeat Customer Rate</b>.
+* Engineered DAX Slicers for <b>"High Value" (>$5k)</b> vs. Standard tiers.
+<br><br>
+![Customer Insights](Assets/Customer_Insights.png)
+</details>
 
-### 📦 Product Analysis
+<details>
+<summary>🚚 <b>Supply Chain: Risk & Deficit Mapping</b></summary>
+<br>
+* Identified <b>-4K net stock position</b> in high-demand lines.
+* Mapped inventory deficits directly to revenue-at-risk for replenishment priority.
+<br><br>
+![Supply Chain](Assets/Supply_Chain.png)
+</details>
 
-* **Pareto Optimization:** Identified that the **top 30.2% of models** drive the majority of revenue.
-* **Portfolio Health:** Used Scatter Plots to segment "Star" products from "Underperformers."
+<details>
+<summary>⭐ <b>Employee Performance: Quota Tracking</b></summary>
+<br>
+* Monitored real-time progress against a <b>$51.4M global target</b>.
+* Developed "Elite" vs "At Risk" performance tiering logic.
+<br><br>
+![Employee Performance](Assets/Employee_Performance.png)
+</details>
 
-### 🌐 Customer Insights
-
-* **Retention:** Achieved a **37.14% Repeat Customer Rate**, a key KPI for brand loyalty.
-* **Segmentation:** Engineered a DAX Slicer for **"High Value" (>$5,000 spend)** vs. "Standard" tiers.
-
-### 🚚 Supply Chain Operations
-
-* **Risk Mitigation:** Identified a **-4K net stock position**, flagging critical deficits in high-demand lines.
-* **Operational Flow:** Mapped inventory deficits directly to revenue-at-risk for replenishment priority.
-
-### ⭐ Employee Performance
-
-* **Efficiency Logic:** Developed DAX to segment the sales force into **"Elite"** and **"At Risk"** categories.
-* **Quota Tracking:** Monitored real-time progress against a **$51.4M global target**.
-
-### 📣 Promo Analysis
-
-* **ROI Evaluation:** Proved that **Volume Discounts** drive **$3.06M in sales** with a lean 0.17% discount impact.
-* **Strategy:** Identified that Volume Discounts account for **97% of promotional revenue**.
+<details>
+<summary>📣 <b>Promo Analysis: ROI & Discount Impact</b></summary>
+<br>
+* Proved <b>Volume Discounts</b> drive $3.06M in sales with minimal margin impact.
+* Analyzed promo effectiveness across the fiscal calendar.
+<br><br>
+![Promo Analysis](Assets/Promo_Analysis.png)
+</details>
 
 ---
 
