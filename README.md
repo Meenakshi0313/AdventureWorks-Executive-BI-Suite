@@ -49,7 +49,7 @@ A centralized entry point featuring high-fidelity page navigators.
 <details>
 <summary>📊 <b>Executive Overview: Financial Health</b></summary>
 <br>
-* Analyzed <b>$44.35M in Total Sales</b> with 41.3% margin stability.
+* Analyzed $44.35M in Total Sales with 41.3% margin stability.
 * Visualized global revenue distribution and flagship product performance.
 <br><br>
   <img src="Assets/Executive-Overview.png" width="900" alt="Executive_Overview">
@@ -58,7 +58,7 @@ A centralized entry point featuring high-fidelity page navigators.
 <details>
 <summary>📦 <b>Product Analysis: Pareto & Portfolio</b></summary>
 <br>
-* Identified that the <b>top 30.2% of models</b> drive the majority of revenue.
+* Identified that the **top 30.2% of models** drive the majority of revenue.  
 * Used Scatter Plots to segment "Star" products from "Underperformers."
 <br><br>
   <img src="Assets/Product-Analysis.png" width="900" alt="Product_Analysis">
@@ -68,6 +68,7 @@ A centralized entry point featuring high-fidelity page navigators.
 <summary>🌐 <b>Customer Insights: Behavioral Segmentation</b></summary>
 <br>
 * Achieved a <b>37.14% Repeat Customer Rate</b>.
+  
 * Engineered DAX Slicers for <b>"High Value" (>$5k)</b> vs. Standard tiers.
 <br><br>
   <img src="Assets/Customer-Insights.png" width="900" alt="Customer Insights">
