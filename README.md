@@ -183,17 +183,18 @@ Please use the links below to review the project files:
 
 ---
 
-## 💡 Strategic Business Recommendations
 
-Based on the data analyzed in the AdventureWorks Intelligence Suite, the following actions are recommended:
+## 🔍 Key Observations & Data Insights
 
-- **Inventory Optimization (Supply Chain):** Address the critical stock deficits in the **Accessories** category, specifically for "Front Brakes" and "Mountain Tire Tubes." These items currently show the highest revenue impact due to deficits. Implementing a **Safety Stock Buffer** of 15% for these high-turnover components could prevent stockouts during peak periods.
+Through the development of the Gold Layer views and the multi-page dashboard suite, several critical business observations were identified:
 
-- **Customer Retention & Marketing (Customer Insights):** The "Professional" and "Management" occupation segments represent the highest average spending. I recommend launching a **Targeted Loyalty Program** specifically for these demographics to increase "Units per Transaction," which currently sits at **15.03**.
+- **Inventory & Revenue Protection:** There is a measurable correlation between product deficits and lost revenue potential within the **Accessories** category. Specifically, "Front Brakes" and "Mountain Tire Tubes" show frequent stockouts despite high demand signals, suggesting an opportunity for adjusted safety stock levels.
 
-- **Product Quality Control (Product Analysis):** The **80.38% Return Rate** is a significant outlier that requires immediate investigation. A deep-dive audit into the manufacturing or shipping process of the most returned models is necessary to protect the current profit margin of **42.19%**.
+- **Customer Value Segmentation:** Data indicates that **Professional** and **Management** occupation groups yield the highest "Average Revenue per Customer." While "Units per Transaction" currently averages **15.03**, there is significant potential to increase this through targeted upsell strategies for these high-value segments.
 
-- **Promotional Strategy (Promo Analysis):** The "Volume Discount" promotions demonstrated a significantly higher ROI compared to other categories. Marketing spend should be reallocated from low-performing seasonal clearing events toward **Volume-Based Incentives** to maximize net profit impact.
+- **Quality Control Warning:** The **80.38% Return Rate** observed in the Product Analysis page is a critical outlier. This suggests a need for further investigation into manufacturing batches or shipping logistics to protect the current **42.19% Profit Margin**.
+
+- **Marketing Efficiency:** Analysis of the **Promo ROI Matrix** shows that "Volume Discounts" consistently outperform seasonal or product-specific promotions in terms of net revenue impact. This indicates th
 
 ---
 
