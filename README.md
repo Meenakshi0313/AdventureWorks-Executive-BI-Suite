@@ -175,13 +175,13 @@ Marketing ROI analysis to determine which discounts drive genuine growth.
 
 ---
 
-## 🚀 How to Use
+## 📥 Project Assets & Downloads
 
-SQL Scripts: Navigate to the **/SQL_Views** folder to see the logic used for data extraction.
+Please use the links below to review the project files:
 
-Power BI File: Download the **.pbix** file to interact with the slicers and drill-through features.
-
-Live Link: [Insert your Link here if you have published to web]
+* 📊 **[Download Power BI Dashboard (.pbix)](Report_and_Dashboard/AdventureWorks_Executive_Suite.pbix)** - *Requires Power BI Desktop to view data model and DAX*
+* 📄 **[Download Project Summary (PDF)](Report_and_Dashboard/AdventureWorks_Executive_Suite.pdf)** - *A comprehensive report of insights and methodology*
+* 💻 **[View SQL Scripts](Sql-Scripts/AdventureWork_Gold_Layer_View.sql)** - *Database views and transformation logic*
 
 ---
 
