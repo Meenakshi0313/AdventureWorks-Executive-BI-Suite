@@ -43,7 +43,7 @@ To ensure a "Single Source of Truth," I developed a suite of **T-SQL Views** to 
 <br>
 A centralized entry point featuring high-fidelity page navigators. 
 <br><br>
-  <img src="Assets/Home_Page.png" width="900" alt="Home_Page">
+  <img src="Assets/Home-Page.png" width="900" alt="Home_Page">
 </details>
 
 <details>
@@ -52,7 +52,7 @@ A centralized entry point featuring high-fidelity page navigators.
 * Analyzed <b>$44.35M in Total Sales</b> with 41.3% margin stability.
 * Visualized global revenue distribution and flagship product performance.
 <br><br>
-  <img src="Assets/Executive_Overview.png" width="900" alt="Executive_Overview">
+  <img src="Assets/Executive-Overview.png" width="900" alt="Executive_Overview">
 </details>
 
 <details>
@@ -61,7 +61,7 @@ A centralized entry point featuring high-fidelity page navigators.
 * Identified that the <b>top 30.2% of models</b> drive the majority of revenue.
 * Used Scatter Plots to segment "Star" products from "Underperformers."
 <br><br>
-  <img src="Assets/Product_Analysis.png" width="900" alt="Product_Analysis">
+  <img src="Assets/Product-Analysis.png" width="900" alt="Product_Analysis">
 </details>
 
 <details>
@@ -70,7 +70,7 @@ A centralized entry point featuring high-fidelity page navigators.
 * Achieved a <b>37.14% Repeat Customer Rate</b>.
 * Engineered DAX Slicers for <b>"High Value" (>$5k)</b> vs. Standard tiers.
 <br><br>
-  <img src="Assets/Customer_Insights.png" width="900" alt="Customer Insights">
+  <img src="Assets/Customer-Insights.png" width="900" alt="Customer Insights">
 </details>
 
 <details>
@@ -79,7 +79,7 @@ A centralized entry point featuring high-fidelity page navigators.
 * Identified <b>-4K net stock position</b> in high-demand lines.
 * Mapped inventory deficits directly to revenue-at-risk for replenishment priority.
 <br><br>
-  <img src="Assets/Supply_Chain.png" width="900" alt="Supply Chain">
+  <img src="Assets/Supply-Chain.png" width="900" alt="Supply Chain">
 </details>
 
 <details>
@@ -88,7 +88,7 @@ A centralized entry point featuring high-fidelity page navigators.
 * Monitored real-time progress against a <b>$51.4M global target</b>.
 * Developed "Elite" vs "At Risk" performance tiering logic.
 <br><br>
-  <img src="Assets/Employee_Performance.png" width="900" alt="Employee Performance">
+  <img src="Assets/Employee-Performance.png" width="900" alt="Employee Performance">
 </details>
 
 <details>
@@ -97,7 +97,7 @@ A centralized entry point featuring high-fidelity page navigators.
 * Proved <b>Volume Discounts</b> drive $3.06M in sales with minimal margin impact.
 * Analyzed promo effectiveness across the fiscal calendar.
 <br><br>
-  <img src="Assets/Promo_Analysis.png" width="900" alt="Promo Analysis">
+  <img src="Assets/Promo-Analysis.png" width="900" alt="Promo Analysis">
 </details>
 
 ---
