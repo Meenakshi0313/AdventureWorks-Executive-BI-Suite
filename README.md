@@ -1,168 +1,88 @@
-## AdventureWorks Executive BI Suite
+# AdventureWorks: Global Sales & Manufacturing Intelligence Suite
 
+## 📌 Project Overview
 
-### 📌 Project Overview
-
-This project transforms raw transactional data into a multi-page, interactive Power BI executive suite. It is designed to provide stakeholders with actionable insights across sales, product lifecycle, supply chain efficiency, and employee productivity.
-
----
-
-### 🛠️ Technical Architecture
-
-- **Data Modeling**: Transformed a complex snowflake schema into a high-performance Star Schema for optimized DAX calculations.
-
-- **UI/UX Design**: Implemented a custom dark-themed interface with a centralized Navigation Hub, synchronized slicers, and F-pattern layouts for readability.
-
-- **Advanced Analytics**: Utilized DAX for complex metrics including Pareto (80/20) analysis, Inventory turnover, and Quota attainment.
+This project transforms raw, fragmented transactional data into a **7-page, high-fidelity Executive Intelligence Suite**. Designed for a global manufacturing scale, this suite provides stakeholders with a "Command Center" view of the business—bridging the gap between high-level financial health and granular operational efficiency.
 
 ---
 
-### 🗄️ Data Transformation & SQL Views
+## 🛠️ Technical Architecture
 
-To ensure data integrity and performance, I developed a suite of T-SQL Views to serve as the "Gold Layer" for the Power BI model. 
-
-* **ETL Logic:** Implemented `LEFT JOIN` logic to denormalize product and geography hierarchies.
-* **Calculated Columns:** Engineered business logic directly in SQL (e.g., tenure calculations and profit margin formulas) to reduce DAX overhead.
-* **Data Pruning:** Filtered datasets to include only active employees and relevant fiscal years (2010+).
-
-[View the full SQL Script here](sql-scripts/gold_view)
+* **Data Modeling:** Engineered a high-performance **Star Schema** from a complex snowflake source, optimizing filter propagation for sub-second DAX visual rendering.
+* **Advanced DAX Engineering:** Developed complex measures for behavioral analytics, including **Pareto (80/20) distributions**, **Inventory Velocity**, and dynamic **Quota Attainment** tracking.
+* **UI/UX Design:** Implemented a "Dark Mode" aesthetic with an **App-like Navigation Hub**, synchronized slicers for cross-page state management, and F-pattern layouts to reduce cognitive load.
 
 ---
 
-### ⭐ Data Model (Gold Layer)
+## 🗄️ SQL Engineering (The "Gold Layer")
 
-The analytical model is designed as a Star Schema, ensuring efficient query performance and clear relationship management:
+To ensure a "Single Source of Truth," I developed a suite of **T-SQL Views** to serve as the semantic layer for the Power BI model.
+* **Hierarchy Denormalization:** Flattened product and geography hierarchies using `LEFT JOIN` logic.
+* **Business Logic Layer:** Offloaded heavy calculations (e.g., tenure and profit margins) to SQL to minimize DAX overhead.
+* **Data Pruning:** Filtered legacy datasets to focus on active employees and relevant fiscal cycles (2010+).
 
-- **Fact Table**: v_InternetFactSales, v_FactProductInventory, v_FactSalesQuota (includes KPIs like is_late_delivery and delivery_status).
-
-- **Dimension Tables**: v_DimCustomers, v_DimProducts, v_DimTerritory, v_DimEmployee, v_DimPromotion v_DimDate.
-
-<details>
-  <summary> Data Model </summary>
-  <br>
-  <img src="docs/Data-Model.png" width="900" alt="Data-Model">
-</details>
+[**🔗 View SQL Scripts Repository**](Sql-Scripts/AdventureWork_Gold_Layer_View)
 
 ---
 
-### 📊 Dashboard Previews & Business Insights
+## 📊 Suite Insights & Business Logic
 
-💡 Tip: Click on any heading below to view the interactive dashboard screenshots and deep-dive insights.
+### 🏠 Home Page (Command Center)
 
----
+A centralized entry point featuring high-fidelity page navigators. This "App-style" interface ensures an intuitive user experience across all six analytical domains.
 
-<details>
-  <summary> 🏠 Home Page </summary>
-  <br>
-  <img src="docs/Home-Page.png" width="900" alt="Home-Page">
-  </details>
+### 📊 Executive Overview
 
-  - A centralized **"Command Center"** featuring high-fidelity page navigators and synchronized bookmarks to provide an intuitive, app-like user experience across all 6 analytical domains
-    
-  ---
+* **Market Share:** Analyzed **$44.35M in Total Sales**, with the US driving >50% of global revenue.
+* **Stability:** Monitored a consistent **41.3% profit margin** across seasonal trends.
 
-<details>
-  <summary> 📊 Executive Overview </summary>
-  <br>
-  <img src="docs/Executive-Overview.png" width="900" alt="Executive-Overview">
-</details>
+### 📦 Product Analysis
 
-- Global Revenue: Analyzed **$44.35M in Total Sales** with the United States driving over **50% of global market share**.
+* **Pareto Optimization:** Identified that the **top 30.2% of models** drive the majority of revenue.
+* **Portfolio Health:** Used Scatter Plots to segment "Star" products from "Underperformers."
 
-- Profitability: Tracked **$18.32M in Total Profit**, monitoring the **41.3% margin** stability through seasonal trends.
+### 🌐 Customer Insights
 
-- Top Performance: Identified **"Road Bikes"** as the primary revenue subcategory, contributing **$21.5M** to the bottom line.
+* **Retention:** Achieved a **37.14% Repeat Customer Rate**, a key KPI for brand loyalty.
+* **Segmentation:** Engineered a DAX Slicer for **"High Value" (>$5,000 spend)** vs. "Standard" tiers.
 
----
+### 🚚 Supply Chain Operations
 
-<details>
-  <summary> 📦 Product Analysis </summary>
-  <br>
-  <img src="docs/Product-Analysis.png" width="900" alt="Product-Analysis">
-</details>
+* **Risk Mitigation:** Identified a **-4K net stock position**, flagging critical deficits in high-demand lines.
+* **Operational Flow:** Mapped inventory deficits directly to revenue-at-risk for replenishment priority.
 
-- Pareto Principle: Visualized that the **top 30.2% of models** generate the majority of **revenue**, allowing for inventory prioritization.
+### ⭐ Employee Performance
 
-- Portfolio Health: Used a scatter plot to identify "underperformers" (High volume, low margin) versus "stars" (High volume, high margin).
+* **Efficiency Logic:** Developed DAX to segment the sales force into **"Elite"** and **"At Risk"** categories.
+* **Quota Tracking:** Monitored real-time progress against a **$51.4M global target**.
 
-- Inventory Turnover: Measured a **4.4 turnover rate**, signaling a healthy **"Surplus"** position for top-selling models.
+### 📣 Promo Analysis
+
+* **ROI Evaluation:** Proved that **Volume Discounts** drive **$3.06M in sales** with a lean 0.17% discount impact.
+* **Strategy:** Identified that Volume Discounts account for **97% of promotional revenue**.
 
 ---
 
-<details>
-  <summary> 🌐 Customer Insights </summary>
-  <br>
-  <img src="docs/Customer-Insights.png" width="900" alt="Customer-Insights">
-</details>
+## 🛠️ Technologies Used
 
-- Loyalty Metrics: Achieved a **37.14% Repeat Customer Rate**, a key KPI for measuring long-term brand health.
-
-- Customer Segmentation: Engineered a custom **DAX Slicer Table** to categorize clients into "High Value" and "Standard" tiers based on a **$5,000+** spend threshold, enabling targeted loyalty analysis.
-
-- Demographics: Binned yearly income to identify the **$50K–$100K** bracket as the core purchasing demographic.
+* **SQL Server:** T-SQL, Views, Schema Design.
+* **Power BI:** Star Schema Modeling, Advanced DAX, Sparklines, UX/UI Design.
+* **GitHub:** Version Control and Documentation.
 
 ---
 
-<details>
-  <summary> 🚚 Supply Chain Operations </summary>
-  <br>
-  <img src="docs/Supply-Chain.png" width="900" alt="Supply-Chain">
-</details>
+## 📄 Documentation
 
-- Inventory Risk: Identified a **-4K net stock position**, flagging a critical **"Inventory Deficit"** that threatens potential revenue.
-
-- Flow Analysis: Tracked monthly **"Inbound vs. Outbound"** volume to optimize warehouse labor and storage allocation.
-
-- Impact Mapping: Visualized the specific products in deficit (e.g., **Mountain-200 frames**) to prioritize replenishment.
+* [**View Full Project PDF**](Report_and_Dashboard/AdventureWorks_Executive_Suite.pdf)
+* [**Download .PBIX File**](Report_and_Dashboard/AdventureWorks_Executive_Suite.pbix)
 
 ---
 
-<details>
-  <summary> ⭐ Employee Performance </summary>
-  <br>
-  <img src="docs/Employee-Performance.png" width="900" alt="Employee-Performance">
-</details>
-
-- Logic Implementation: Developed a custom **DAX Calculated Column** to segment the sales force into Elite (>$X revenue) and At Risk (<$Y revenue) categories.
-
-- Purpose: This allows for static row-level filtering and ensures these tiers can be used as **Slicers** or **Legend** categories across the entire report.
-  
-- Quota Tracking: Monitored the global sales force against a **$51.4M target**, identifying a current **46.34% attainment level**.
-
-- Force Distribution: Categorized employees into **performance tiers**, revealing that while **4 are "Elite**," **8** are currently **"At Risk"**.
-
-- Departmental Efficiency: Analyzed salary budget allocation, showing **"Production"** as the **primary resource driver** at **46.24%**.
-
----
-
-<details>
-  <summary> 📣 Promo Analysis </summary>
-  <br>
-  <img src="docs/Promo-Analysis.png" width="900" alt="Promo-Analysis">
-</details>
-
-- Discount Efficiency: Proved that **"Volume Discounts"** maintain a high ROI, driving **$3.06M in sales** with only a **0.17% discount** impact.
-
-- Promotion Mix: Identified that **Volume Discounts** account for over **97% of promotional revenue**.
-
-- Seasonality: Tracked **"New Product" vs. "Volume Discount"** effectiveness across the fiscal calendar to optimize marketing spend.
-
----
-
-### 🛠️ Technologies Used
-
-- **SQL Server**: T-SQL, Views, Data Denormalization. 
-
-- **Power BI**: Star Schema, DAX, Interactive UI/UX.
-
-- **GitHub**: Version control and documentation.
-
-  ---
-  
-[📄 View Full Project Documentation (PDF)](./docs/AdventureWorks_Executive_Suite.pbix.pdf)
-
-  ---
-
-  ### Author: Meenakshi Singh 
+# Author: Meenakshi Singh
 
 Data Analyst | SQL Engineering | Power BI Architecture
+
+  ---
+  
+
+
