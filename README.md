@@ -12,7 +12,7 @@ This project transforms raw transactional data from the **AdventureWorks 2025** 
 
 * 📊 **[Download Power BI Dashboard (.pbix)](Report_and_Dashboard/AdventureWorks_Executive_Suite.pbix)** - *Requires Power BI Desktop to view data model and DAX*
 * 📄 **[Download Project Summary (PDF)](Report_and_Dashboard/AdventureWorks_Executive_Suite.pdf)** - *A comprehensive report of insights and methodology*
-* 💻 **[View SQL Scripts](Sql-Scripts/02_Gold_Reporting_Views.sqll)** - *Database views and transformation logic*
+* 💻 **[View SQL Scripts](Sql-Scripts/01_Gold_Reporting_Views.sqll)** - *Database views and transformation logic*
 * 🗄️ **[Source Data (.bak)](AdventureWorks2025_Source/AdventureWorksDW2025.bak)** - *(24.1 MB)*
 
 ---
