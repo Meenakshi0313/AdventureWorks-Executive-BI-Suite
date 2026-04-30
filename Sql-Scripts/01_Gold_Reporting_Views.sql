@@ -268,7 +268,7 @@ SELECT
     OrderDateKey AS [OrderDateKey],
     ResellerKey AS [ResellerKey],
     ProductKey AS [ProductKey],
-    EmployeeKey AS [Employe Key],
+    EmployeeKey AS [EmployeeKey],
     SalesTerritoryKey AS [SalesTerritoryKey],
     OrderQuantity AS [Order Quantity],
     UnitPrice AS [Unit Price],
