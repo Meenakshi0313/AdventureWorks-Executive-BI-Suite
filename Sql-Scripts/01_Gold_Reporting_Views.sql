@@ -97,14 +97,14 @@ GO
 CREATE OR ALTER VIEW v_DimEmployee AS
 SELECT 
     e.EmployeeKey AS [EmployeeKey],
-    e.ParentEmployeeKey AS [ParentEmployeeKey],
+    ISNULL(CAST(e.ParentEmployeeKey AS VARCHAR), 'Top Level') AS [ParentEmployeeKey],
     e.FirstName + ' ' + e.LastName AS [Employee Name],
     e.Title AS [Title],
     e.DepartmentName AS [Department],
     e.HireDate AS [Hire Date],
     DATEDIFF(YEAR, e.HireDate, GETDATE()) AS [Years of Service],
-    e.Gender AS [Gender],
-    e.MaritalStatus AS [Marital Status],
+    CASE WHEN e.Gender = 'M' THEN 'Male' ELSE 'Female' END AS [Gender],
+    CASE WHEN e.MaritalStatus = 'M' THEN 'Married' ELSE 'Single' END AS  [Marital Status],
     e.BaseRate AS [Base Rate],
     e.SalesTerritoryKey AS [SalesTerritoryKey],
     CASE 
