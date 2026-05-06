@@ -71,6 +71,7 @@ SELECT
     c.CustomerKey AS [CustomerKey],
     c.FirstName + ' ' + c.LastName AS [Customer Name],
     c.Gender AS [Gender],
+    c.EmailAddress AS [Email Address],
     c.YearlyIncome AS [Yearly Income],
     DATEDIFF(YEAR, c.BirthDate, GETDATE()) AS [Age],
     c.EnglishEducation AS [Education],
@@ -97,7 +98,7 @@ GO
 CREATE OR ALTER VIEW v_DimEmployee AS
 SELECT 
     e.EmployeeKey AS [EmployeeKey],
-    ISNULL(CAST(e.ParentEmployeeKey AS VARCHAR), 'Top Level') AS [ParentEmployeeKey],
+    ISNULL(CAST(e.ParentEmployeeKey AS VARCHAR), 'Top Level')  AS [ParentEmployeeKey],
     e.FirstName + ' ' + e.LastName AS [Employee Name],
     e.Title AS [Title],
     e.DepartmentName AS [Department],
@@ -114,6 +115,41 @@ SELECT
     e.CurrentFlag AS [Current Flag]
 FROM DimEmployee e
 WHERE e.CurrentFlag = 1;
+GO
+
+-- =============================================================================
+-- Create Dimension: v_DimProspectiveBuyer
+-- =============================================================================
+
+IF OBJECT_ID('v_DimProspectiveBuyer', 'V') IS NOT NULL
+    DROP VIEW v_DimProspectiveBuyer;
+GO
+
+CREATE OR ALTER VIEW v_DimProspectiveBuyer AS
+SELECT 
+    pb.ProspectiveBuyerKey,
+    pb.FirstName + ' ' + pb.LastName AS [Prospective Name],
+    pb.BirthDate AS [Birth Date],
+    DATEDIFF(YEAR, pb.BirthDate, GETDATE()) AS [Age],
+    CASE WHEN pb.Gender = 'M' THEN 'Male' ELSE 'Female' END AS [Gender],
+    CASE WHEN pb.MaritalStatus = 'M' THEN 'Married' ELSE 'Single' END AS [Marital Status],
+    pb.EmailAddress AS [Email Address],
+    pb.YearlyIncome AS [Yearly Income],
+    pb.TotalChildren AS [Total Children],
+    pb.Education,
+    pb.Occupation,
+    CASE WHEN pb.HouseOwnerFlag = '1' THEN 'Homeowner' ELSE 'Renter' END AS [Homeowner Status],
+    pb.NumberCarsOwned AS [Number Cars Owned], 
+    pb.AddressLine1 AS [Address],
+    pb.City,
+    g.StateProvinceName AS [State],
+    g.EnglishCountryRegionName AS [Country],
+    g.PostalCode AS [Postal Code],
+    g.SalesTerritoryKey AS [SalesTerritoryKey] 
+FROM [dbo].[ProspectiveBuyer] pb
+LEFT JOIN [dbo].[DimGeography] g 
+    ON pb.PostalCode = g.PostalCode 
+    AND pb.City = g.City;
 GO
 
 -- =============================================================================
@@ -135,7 +171,7 @@ SELECT
     CalendarQuarter AS [Quarter],
     CalendarYear AS [Year]
 FROM DimDate
-WHERE DateKey BETWEEN 20101201 AND 20140131;
+WHERE DateKey BETWEEN 20101201 AND 20141231;
 GO
 
 -- =============================================================================
@@ -193,7 +229,7 @@ SELECT
     UnitsOut AS [Units Out],
     UnitsBalance AS [Units Balance]
 FROM FactProductInventory
-WHERE DateKey BETWEEN 20101201 AND 20140131;;
+WHERE DateKey BETWEEN 20101201 AND 20141231;;
 GO
 
 -- =============================================================================
@@ -216,6 +252,35 @@ SELECT
 FROM FactSalesQuota ; 
 GO
 
+
+-- =============================================================================
+-- Create Fact Table: v_FactCallCenter
+-- =============================================================================
+
+IF OBJECT_ID('v_FactCallCenter', 'V') IS NOT NULL
+    DROP VIEW v_FactCallCenter;
+GO
+
+CREATE OR ALTER VIEW v_FactCallCenter AS
+SELECT 
+    FactCallCenterID,
+    DateKey,
+    Shift,
+    WageType AS [Wage Type],
+    LevelOneOperators AS [L1 Operators],
+    LevelTwoOperators AS [L2 Operators],
+    TotalOperators AS [Total Operators],
+    Calls,
+    AutomaticResponses AS [Auto Responses],
+    Orders,
+    IssuesRaised AS [Issues Raised],
+    AverageTimePerIssue AS [Avg Resolution Time (Sec)],
+    ServiceGrade AS [Service Grade],
+    [Date] AS [Actual Date]
+FROM FactCallCenter;
+GO
+
+
 -- =============================================================================
 -- Create Fact Table: v_InternetFactSales
 -- =============================================================================
@@ -231,16 +296,20 @@ SELECT
     f.OrderDateKey AS [OrderDateKey],
     f.CustomerKey AS [CustomerKey],
     f.ProductKey AS [ProductKey],
-    f.PromotionKey AS [PromotionKey], 
+    f.PromotionKey AS [PromotionKey],
     f.SalesTerritoryKey AS [SalesTerritoryKey],    
     f.OrderQuantity AS [Order Quantity],
     f.UnitPrice AS [Unit Price],
+    f.UnitPriceDiscountPct AS [Unit Price Discount Percent],
     f.DiscountAmount AS [Discount Amount],   
     f.SalesAmount AS [Sales Amount],
-    f.TotalProductCost AS [Total Cost],
+    f.TaxAmt AS [Tax Amount],      
+    f.Freight AS [Freight Cost],   
+    f.TotalProductCost AS [Total Product Cost],
     (f.SalesAmount - f.TotalProductCost) AS [Profit Amount],
     p.EnglishPromotionName AS [Promotion Name],
-    
+    c.CurrencyName AS [Currency Name],
+    cr.AverageRate AS [Average Rate],
     ISNULL(r.SalesReasonName, 'Normal Sale') AS [Sales Reason],
     CASE 
         WHEN r.SalesReasonReasonType = 'Other' THEN 1 
@@ -249,8 +318,10 @@ SELECT
     END AS [Is Return Flag]
 FROM FactInternetSales f
 LEFT JOIN DimPromotion p ON f.PromotionKey = p.PromotionKey
-LEFT JOIN FactInternetSalesReason fisr  ON f.SalesOrderNumber = fisr.SalesOrderNumber
-LEFT JOIN DimSalesReason r ON fisr.SalesReasonKey = r.SalesReasonKey;
+LEFT JOIN FactInternetSalesReason fisr ON f.SalesOrderNumber = fisr.SalesOrderNumber
+LEFT JOIN DimSalesReason r ON fisr.SalesReasonKey = r.SalesReasonKey
+LEFT JOIN FactCurrencyRate cr ON f.CurrencyKey = cr.CurrencyKey AND f.OrderDateKey = cr.DateKey
+LEFT JOIN DimCurrency c ON f.CurrencyKey = c.CurrencyKey;
 GO
 
 
@@ -264,15 +335,25 @@ GO
 
 CREATE OR ALTER VIEW v_FactResellerSales AS
 SELECT 
-    SalesOrderNumber AS [Sales Order Number],
-    OrderDateKey AS [OrderDateKey],
-    ResellerKey AS [ResellerKey],
-    ProductKey AS [ProductKey],
-    EmployeeKey AS [EmployeeKey],
-    SalesTerritoryKey AS [SalesTerritoryKey],
-    OrderQuantity AS [Order Quantity],
-    UnitPrice AS [Unit Price],
-    SalesAmount AS [Reseller Sales],
-    TotalProductCost AS [Reseller Cost],
-    (SalesAmount - TotalProductCost) AS [Reseller Profit]
-FROM FactResellerSales;
+    f.SalesOrderNumber AS [Sales Order Number],
+    f.OrderDateKey AS [OrderDateKey],
+    f.ResellerKey AS [ResellerKey],
+    f.ProductKey AS [ProductKey],
+    f.EmployeeKey AS [Employee Key],
+    f.PromotionKey AS [PromotionKey], 
+    f.SalesTerritoryKey AS [SalesTerritoryKey],
+    f.OrderQuantity AS [Order Quantity],
+    f.UnitPrice AS [Unit Price],
+    f.UnitPriceDiscountPct AS [Unit Price Discount Percent],
+    f.DiscountAmount AS [Discount Amount],
+    f.SalesAmount AS [Sales Amount],
+    f.TaxAmt AS [Tax Amount],     
+    f.Freight AS [Freight Cost],    
+    f.TotalProductCost AS [Total Product Cost],
+    (f.SalesAmount - f.TotalProductCost) AS [Reseller Profit],
+    c.CurrencyName AS [Currency Name],
+    cr.AverageRate AS [Average Rate]
+FROM FactResellerSales f
+LEFT JOIN FactCurrencyRate cr ON f.CurrencyKey = cr.CurrencyKey AND f.OrderDateKey = cr.DateKey
+LEFT JOIN DimCurrency c ON f.CurrencyKey = c.CurrencyKey;
+GO
