@@ -79,30 +79,23 @@ SELECT
     e.Title,
     e.DepartmentName,
     e.HireDate,
-    -- Calculating Tenure in years for performance context
     DATEDIFF(YEAR, e.HireDate, GETDATE()) AS [Years of Service],
     e.Gender,
     e.MaritalStatus,
     e.BaseRate,
-    -- Categorizing by territory for regional analysis
     e.SalesTerritoryKey,
-    -- Useful for filtering dashboard page
     CASE 
         WHEN e.SalesPersonFlag = 1 THEN 'Sales' 
         ELSE 'Support/Admin' 
     END AS [Role Category],
     e.CurrentFlag
 FROM DimEmployee e
-WHERE e.CurrentFlag = 1; -- We only care about active employees
+WHERE e.CurrentFlag = 1;
 GO
 
 -- =============================================================================
 -- Create Dimension: v_DimDate
 -- =============================================================================
-
-IF OBJECT_ID('v_DimDate', 'V') IS NOT NULL
-    DROP VIEW v_DimDate;
-GO
 
 IF OBJECT_ID('v_DimDate', 'V') IS NOT NULL
     DROP VIEW v_DimDate;
@@ -119,7 +112,7 @@ SELECT
     CalendarQuarter AS [Quarter],
     CalendarYear AS [Year]
 FROM DimDate
-WHERE CalendarYear >= 2010; -- This safely prunes the empty years
+WHERE CalendarYear >= 2010; 
 GO
 
 -- =============================================================================
@@ -171,7 +164,7 @@ CREATE VIEW v_FactProductInventory AS
 SELECT 
     ProductKey,
     DateKey,
-    MovementDate, -- Keeping this is great for daily trend analysis
+    MovementDate,
     UnitCost,
     UnitsIn,
     UnitsOut,
@@ -197,7 +190,7 @@ SELECT
     EmployeeKey, 
     SalesAmountQuota
 FROM FactSalesQuota
-WHERE DateKey >= 20100101; -- Cleanly filter out old data
+WHERE DateKey >= 20100101;
 GO
 
 -- =============================================================================
