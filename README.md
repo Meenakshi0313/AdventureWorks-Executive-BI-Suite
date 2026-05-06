@@ -8,7 +8,6 @@ By implementing a **T-SQL Gold Layer** and a custom **Power BI Executive Interfa
 ---
 
 ## 🚀 Documentation & Quick Links
-<<<<<<< HEAD
 
 * 📊 **[Download Power BI Dashboard (.pbix)](Report_and_Dashboard/AdventureWorks_Executive_Suite.pbix)** - *Requires Power BI Desktop to view data model and DAX*
 * 📄 **[Download Project Summary (PDF)](Report_and_Dashboard/AdventureWorks_Executive_Suite.pdf)** - *A comprehensive report of insights and methodology*
