@@ -20,7 +20,7 @@ Click on any module below to view the high-resolution preview directly from the 
 
 | Module | Analytical Focus | High-Res Preview |
 | :--- | :--- | :--- |
-| **01. Command Center** | Global Navigation & Entry Point | [🖼️ View](./Assets/01_Command-Center.jpg) |
+| **01. Command Center** | Global Navigation & Entry Point | [🖼️ View](./Assets/01_Command-Center.png) |
 | **02. Executive Overview** | C-Suite Financial & Pareto Health | [🖼️ View](./Assets/02_Executive-Overview.png) |
 | **03. Product Profitability** | Unit Contribution & Price Erosion | [🖼️ View](./Assets/03_Product-Profitability-Analysis.png) |
 | **04. Segment Insights** | Demographic & Income Distribution | [🖼️ View](./Assets/04_Segment-Insights.png) |
@@ -34,7 +34,7 @@ Click on any module below to view the high-resolution preview directly from the 
   <summary>📸 **Click here to expand and view all screenshots in-line**</summary>
 
   ### 01. Command Center
-  ![Command Center](./Assets/01_Command-Center.jpg)
+  ![Command Center](./Assets/01_Command-Center.png)
 
   ### 02. Executive Overview
   ![Executive Overview](./Assets/02_Executive-Overview.png)
